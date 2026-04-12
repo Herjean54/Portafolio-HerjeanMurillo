@@ -253,6 +253,56 @@ desarrollo de aplicaciones empresariales Java.</p>
 
  </section>
 
+ <h1 id="experiencias">Experiencia Profesional</h1>
+
+<section class="section-experiencias">
+
+  <div id="lista-experiencias" class="grid-experiencias">
+    <!-- Las tarjetas se cargan aquí desde la API -->
+  </div>
+
+  <div class="contenedor-formulario">
+    <h2 id="titulo-form">Agregar Experiencia</h2>
+
+    <form class="form-experiencia" id="form-experiencia">
+
+      <input type="hidden" id="exp-id">
+
+      <label>Empresa</label>
+      <input class="input-form" type="text" id="exp-empresa" placeholder="Ej: Google">
+      <div class="error" id="error-empresa"></div>
+
+      <label>Cargo</label>
+      <input class="input-form" type="text" id="exp-cargo" placeholder="Ej: Desarrollador Backend">
+      <div class="error" id="error-cargo"></div>
+
+      <label>Descripción</label>
+      <textarea class="input-form text-area" id="exp-descripcion" placeholder="Describe tus responsabilidades..."></textarea>
+      <div class="error" id="error-descripcion"></div>
+
+      <div class="fila-anios">
+        <div class="campo-anio">
+          <label>Año inicio</label>
+          <input class="input-form" type="number" id="exp-inicio" placeholder="2020" min="1990" max="2100">
+          <div class="error" id="error-inicio"></div>
+        </div>
+        <div class="campo-anio">
+          <label>Año fin</label>
+          <input class="input-form" type="number" id="exp-fin" placeholder="2023" min="1990" max="2100">
+          <div class="error" id="error-fin"></div>
+        </div>
+      </div>
+
+      <div class="botones-form">
+        <button type="button" class="btn-guardar" id="btn-guardar" onclick="guardarExperiencia()">Guardar</button>
+        <button type="button" class="btn-cancelar" id="btn-cancelar" onclick="cancelarEdicion()">Cancelar</button>
+      </div>
+
+    </form>
+  </div>
+
+</section>
+
  <section class="section-contacto">
 
     <header class="header-contacto" id="contacto">

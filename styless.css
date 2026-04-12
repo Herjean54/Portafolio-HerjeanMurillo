@@ -558,3 +558,210 @@ color: #9CA3AF;
     font-size: 13px;
     color: #888;
 }
+
+/*------------------------------------------------------------Experiencia profesional----------------------------------------------- */
+#experiencias {
+  text-align: center;
+  padding-top: 70px;
+  margin-top: 90px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section-experiencias {
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Grid de tarjetas */
+.grid-experiencias {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+/* Tarjeta individual */
+.card-experiencia {
+  background-color: #211832;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  animation: show linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 60%;
+}
+
+.card-experiencia:hover {
+  box-shadow: 0 4px 16px rgba(203, 238, 243, 0.15);
+}
+
+.card-experiencia h3 {
+  margin: 0;
+  color: #CBEEF3;
+  font-size: 16px;
+}
+
+.card-experiencia h4 {
+  margin: 0;
+  font-size: 13px;
+  color: #9CA3AF;
+}
+
+.card-experiencia p {
+  font-size: 13px;
+  color: #9CA3AF;
+  margin: 0;
+}
+
+.card-anios {
+  font-size: 12px;
+  color: #CBEEF3;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+.botones-card {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.btn-editar, .btn-eliminar {
+  flex: 1;
+  padding: 6px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.btn-editar {
+  background-color: #CBEEF3;
+  color: #3A0519;
+}
+
+.btn-eliminar {
+  background-color: #3A0519;
+  color: #CBEEF3;
+  border: 1px solid #CBEEF3;
+}
+
+.btn-editar:hover { opacity: 0.85; }
+.btn-eliminar:hover { opacity: 0.75; }
+
+/* Formulario */
+.contenedor-formulario {
+  background-color: #211832;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 16px;
+  padding: 30px;
+  width: 600px;
+  margin: auto;
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+.contenedor-formulario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #CBEEF3;
+}
+
+.form-experiencia {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.fila-anios {
+  display: flex;
+  gap: 20px;
+}
+
+.campo-anio {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.botones-form {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.btn-guardar {
+  flex: 1;
+  padding: 10px;
+  background-color: #CBEEF3;
+  color: #3A0519;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-cancelar {
+  flex: 1;
+  padding: 10px;
+  background-color: transparent;
+  color: #CBEEF3;
+  border: 1px solid #CBEEF3;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  display: none;
+}
+
+.btn-guardar:hover { opacity: 0.85; }
+.btn-cancelar:hover { opacity: 0.75; }
+
+/* Modo claro */
+body.modeLight .card-experiencia {
+  background-color: #FFF2D0;
+  border-color: rgba(103, 13, 47, 0.2);
+  color: #670D2F;
+}
+
+body.modeLight .card-experiencia h3 { color: #670D2F; }
+body.modeLight .card-experiencia h4,
+body.modeLight .card-experiencia p  { color: #8a5a5a; }
+body.modeLight .card-anios          { color: #670D2F; }
+
+body.modeLight .contenedor-formulario {
+  background-color: #FFF2D0;
+  border-color: rgba(103, 13, 47, 0.3);
+}
+
+body.modeLight .contenedor-formulario h2 { color: #670D2F; }
+
+body.modeLight .btn-guardar {
+  background-color: #670D2F;
+  color: #FFF2D0;
+}
+
+body.modeLight .btn-cancelar {
+  color: #670D2F;
+  border-color: #670D2F;
+}
+
+body.modeLight .btn-eliminar {
+  background-color: transparent;
+  color: #670D2F;
+  border-color: #670D2F;
+}
+
+body.modeLight .btn-editar {
+  background-color: #670D2F;
+  color: #FFF2D0;
+}
